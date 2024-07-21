@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:43
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/plank.webp
+preview: /images/tumblr/preview/plank.webp
 ---
 
 ![time to walk the plank](/images/tumblr/plank.webp)

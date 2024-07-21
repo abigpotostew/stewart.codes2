@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:54
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/diamonds_on_the_soles_of_her_shoes.webp
+preview: /images/tumblr/preview/diamonds_on_the_soles_of_her_shoes.webp
 ---
 
 ![diamonds_on_the_soles_of_her_shoes](/images/tumblr/diamonds_on_the_soles_of_her_shoes.webp)

@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:47
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/birth_of_ideas.webp
+preview: /images/tumblr/preview/birth_of_ideas.webp
 ---
 
 ![birth_of_ideas](/images/tumblr/birth_of_ideas.webp)

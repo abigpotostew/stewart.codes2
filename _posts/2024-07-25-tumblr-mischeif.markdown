@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:44
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/mischeif.webp
+preview: /images/tumblr/preview/mischeif.webp
 ---
 
 ![mischief makers](/images/tumblr/mischeif.webp)

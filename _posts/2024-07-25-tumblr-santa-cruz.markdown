@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:49
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/santa-cruz.webp
+preview: /images/tumblr/preview/santa-cruz.webp
 ---
 
 ![Print](/images/tumblr/santa-cruz.webp)

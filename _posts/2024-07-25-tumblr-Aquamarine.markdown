@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:51
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/Aquamarine.webp
+preview: /images/tumblr/preview/Aquamarine.webp
 ---
 
 ![Aquamarine](/images/tumblr/Aquamarine.webp)

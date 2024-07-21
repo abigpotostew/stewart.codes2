@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:45
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/acidclock.webp
+preview: /images/tumblr/preview/acidclock.webp
 ---
 
 ![acid clock](/images/tumblr/acidclock.webp)

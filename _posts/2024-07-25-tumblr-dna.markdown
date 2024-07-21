@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:43
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/dna.webp
+preview: /images/tumblr/preview/dna.webp
 ---
 
 ![dna](/images/tumblr/dna.webp)

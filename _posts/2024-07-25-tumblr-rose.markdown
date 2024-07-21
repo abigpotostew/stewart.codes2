@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:41
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/rose.webp
+preview: /images/tumblr/preview/rose.webp
 ---
 
 ![rose //](/images/tumblr/rose.webp)

@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:54
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/neuron.webp
+preview: /images/tumblr/preview/neuron.webp
 ---
 
 ![neuron vertices.](/images/tumblr/neuron.webp)

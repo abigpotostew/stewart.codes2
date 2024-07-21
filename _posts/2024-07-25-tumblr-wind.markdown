@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:46
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/wind.webp
+preview: /images/tumblr/preview/wind.webp
 ---
 
 ![wind](/images/tumblr/wind.webp)

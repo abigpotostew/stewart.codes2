@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:48
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/brain.webp
+preview: /images/tumblr/preview/brain.webp
 ---
 
 ![Brain trust](/images/tumblr/brain.webp)

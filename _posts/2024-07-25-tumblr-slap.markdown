@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:53
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/slap.webp
+preview: /images/tumblr/preview/slap.webp
 ---
 
 ![slap](/images/tumblr/slap.webp)

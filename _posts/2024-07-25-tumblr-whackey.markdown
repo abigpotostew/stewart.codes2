@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:51
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/whacky.webp
+preview: /images/tumblr/preview/whacky.webp
 ---
 
 ![whackey wavey swirly sined checkerboard.](/images/tumblr/whacky.webp)

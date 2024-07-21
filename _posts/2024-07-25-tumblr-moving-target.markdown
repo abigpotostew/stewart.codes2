@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:52
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/moving-target.webp
+preview: /images/tumblr/preview/moving-target.webp
 ---
 
 ![moving target](/images/tumblr/moving-target.webp)

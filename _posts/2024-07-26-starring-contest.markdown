@@ -5,7 +5,7 @@ date: 2024-07-21 10:46:46
 tags:
   - genart
   - tumblr
-preview: /images/starring-contest.png
+preview: /images/preview/starring-contest.png
 photos:
   - /images/starring-contest.png
   - /images/starring-contest2.png

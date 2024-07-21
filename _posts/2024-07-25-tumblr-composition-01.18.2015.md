@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:40
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/tumblr_o16u8oryzY1ticvl0o1_500.webp
+preview: /images/tumblr/preview/tumblr_o16u8oryzY1ticvl0o1_500.webp
 ---
 
 ![composition 01.18.2015](/images/tumblr/tumblr_o16u8oryzY1ticvl0o1_500.webp)

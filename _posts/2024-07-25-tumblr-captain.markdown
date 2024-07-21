@@ -5,7 +5,7 @@ date: 2024-07-21 01:46:42
 tags:
   - genart
   - tumblr
-preview: /images/tumblr/captain.webp
+preview: /images/tumblr/preview/captain.webp
 ---
 
 ![shader](/images/tumblr/captain.webp)
