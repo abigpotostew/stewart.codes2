@@ -10,9 +10,12 @@ Stewart previously studied computer science and game design at the University of
 
 Stewart has also worked as a software engineer at Workday.
 
-Other fun projects:
+Other projects:
 - https://www.tumblr.com/blog/rrredwood - old generative art 
 - https://playexquisitecorpse.com/ - interactive art game online
+- https://publicworks.art - open generative art platform
+- https://microcosmbot.xyz - stargaze nft telegram bot
+
 
 ![](/images/about/bm.jpeg) 
 

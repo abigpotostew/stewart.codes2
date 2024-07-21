@@ -9,4 +9,4 @@ preview: /images/public-works-preview.jpg
 
 ---
 
-Publicworks.art
+[Publicworks.art](https://publicworks.art) is an open generative art platform that allows algorithmic artists to easily create NFT collections from a javascript based template.
