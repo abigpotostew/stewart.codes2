@@ -31,7 +31,7 @@ Helio is my favorite and most expressive generative work yet with ambitious goal
 The variety of shapes and movement in both stills and animations is stunning. The generative color palettes adding many layers of recognition and surprise.
 
 ----
-{% twitter https://twitter.com/stewbracken/status/1575549754875838464 %}
+![Helio Twitter](/images/helio-twitter.png)
 
 
 Following my prior works, Helio is a real time WebGL animation, inviting the viewers to watch and enjoy. It's a slow consumption.
@@ -83,12 +83,10 @@ Using @iquilezles https://iquilezles.org/articles/palettes/ generative color pal
 
 ----
 
-{% imgsb sb-gallery-image /images/helio/process-02-02.png 375 250 '"Process 02 02" "Process 02 02"'  %}
 ![Process 01 03](/images/helio/process-01-03.gif)
 
 ----
 
-{% imgsb sb-gallery-image /images/helio/process-02-03.png 375 250 '"Process 02 03" "Process 02 03"' %}
 ![Process 01 03](/images/helio/process-01-03.gif)
 
 ----
