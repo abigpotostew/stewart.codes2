@@ -1,7 +1,7 @@
 ---
 title: Tumblr Archive - composition 01.18.2015  
 author: Stewart Bracken
-date: 2024-07-26 13:46:39
+date: 2024-07-21 01:46:40
 tags:
   - genart
   - tumblr
