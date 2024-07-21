@@ -1,7 +1,7 @@
 ---
 title: Tumblr Archive - birth_of_ideas
 author: Stewart Bracken
-date: 2024-07-21 01:46:46
+date: 2024-07-21 01:46:47
 tags:
   - genart
   - tumblr
