@@ -32,7 +32,7 @@ github_username:  abigpotostew
 
 # Build settings
 #theme: minima
-remote_theme: abigpotostew/urban-theme
+#remote_theme: abigpotostew/urban-theme
 # plugins:
 #   - jekyll-feed
 
@@ -57,4 +57,5 @@ remote_theme: abigpotostew/urban-theme
 #   - vendor/ruby/
 
 markdown: kramdown
+permalink: pretty
 
