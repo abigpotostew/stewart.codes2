@@ -5,6 +5,7 @@ tags:
   - art
 categories:
   - art
+preview: /images/Sabbatical-Art/sabattical art - 1 of 16 preview.jpeg
 photos:
   - /images/Sabbatical-Art/sabattical art - 1 of 16.jpeg
   - /images/Sabbatical-Art/sabattical art - 2 of 16.jpeg
