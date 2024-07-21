@@ -7,6 +7,7 @@ tags:
   - game-design
   - art-cluster
 categories: []
+preview: game-preview.png
 date: 2020-06-17 22:12:00
 ---
 I'm working on a game that tells a story about my experience with my brother's mental illness. Here's a preview:

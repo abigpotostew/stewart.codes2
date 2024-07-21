@@ -1,7 +1,7 @@
 ---
 title: How much vibration are we?
 author: Stewart Bracken
-date: 2020-06-23 13:58:58
+date: 2120-06-23 13:58:58
 tags:
 ---
 Our eyes see vibrations (photons).
