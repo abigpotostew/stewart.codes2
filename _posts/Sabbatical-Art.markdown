@@ -1,3 +1,4 @@
+---
 title: Sabbatical Art
 author: Stewart Bracken
 tags:

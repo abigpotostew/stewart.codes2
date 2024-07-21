@@ -1,3 +1,4 @@
+---
 title: George Floyd
 author: Stewart Bracken
 date: 2020-05-30 17:02:57

@@ -1,3 +1,4 @@
+---
 title: A game about my experience with serious mental illness
 author: Stewart Bracken
 tags:

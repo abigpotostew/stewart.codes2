@@ -1,3 +1,4 @@
+---
 title: Morning Pages
 author: Stewart Bracken
 date: 2020-10-21 10:27:53

@@ -1,3 +1,4 @@
+---
 title: Affirmation Dimension
 author: Stewart Bracken
 tags:

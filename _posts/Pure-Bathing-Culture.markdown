@@ -1,3 +1,4 @@
+---
 title: Pure Bathing Culture
 author: Stewart Bracken
 tags:
