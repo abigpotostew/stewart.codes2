@@ -1,9 +1,10 @@
+---
 title: about
 date: 2019-03-13 01:16:51
 ---
 Stewart Bracken is a programmer and algorithmic artist based in Oakland, California.
 
-Stewart currently works as the lead engineer for [prysm.xyz ▲](https://prysm.xyz), a startup building NFT DAO tools.
+Stewart currently works as the lead engineer for [lore.xyz ▲](https://lore.xyz), a startup building NFT DAO tools.
 
 Stewart previously studied computer science and game design at the University of California, Santa Cruz.
 

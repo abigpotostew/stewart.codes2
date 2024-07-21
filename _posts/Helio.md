@@ -13,16 +13,16 @@ Helio is my favorite and most expressive generative work yet with ambitious goal
 
 ----
 
-{% imgsb sb-gallery-image /images/helio/helio-print-smallest.jpeg 375 452 '"Wall Print 01" "Wall Print 01"' %}
+![Wall Print 01](/images/helio/helio-print-smallest.jpeg)
 
 ----
 
-{% imgsb sb-gallery-image /images/helio/small-wall-stairs-web.jpg 375 772 '"Wall Print 02" "Wall Print 02"' %}
+![Wall Print 02](/images/helio/small-wall-stairs-web.jpg)
 
 
 ----
 
-{% imgsb sb-gallery-image /images/helio/top-short-stairwell-thumb.jpeg 375 436 '"Wall Print 03" "Wall Print 03"' %}
+![Wall Print 03](/images/helio/top-short-stairwell-thumb.jpeg)
 
 ----
 
@@ -37,7 +37,7 @@ Following my prior works, Helio is a real time WebGL animation, inviting the vie
 
 I was nspired by a prior work called Mischief Makers made by me in 2015.
 
-{% imgsb sb-gallery-image /images/helio/mischief.gif %}
+![Mischeif](/images/helio/mischief.gif)
 
 Like Hyperion, Helio utilizes distance fields. I wanted to take the same spirit of Hyperion but apply the distance field in two dimensions rather than three to meet my inspiration and to return to master the basics of the technique I've been practicing for a couple years now.
 
@@ -52,19 +52,21 @@ The algorithm produces some surprising outputs.
 
 The base of the Helio algorithm consists of randomly placed origins points. NFTs have between 5 and 15 origin points. The number of origins has a drastic affect on the final image not yet seen here.
 
-{% imgsb sb-gallery-image /images/helio/process-01-02.gif 375 375 '"Process 01 01" "Process 01 01"' %}
+
+![Process 01 02](/images/helio/process-01-02.gif)
 
 By adding the kaleidoscope effect and moving origins around, a large variety of symmetric compositions are achieved. 
 
-{% imgsb sb-gallery-image /images/helio/process-01-01.png 375 275 '"Process 01 01" "Process 01 01"' %}
+![Process 01 01](/images/helio/process-01-01.gif)
 
 By randomly moving the origins around the screen, and choosing a new keleidoscopic folding structure, we can already see a large difference in generated patterns.
 
-{% imgsb sb-gallery-image /images/helio/process-01-02.png 375 275 '"Process 01 02" "Process 01 02"' %}
+
+![Process 01 02](/images/helio/process-01-02.gif)
 
 ----
 
-{% imgsb sb-gallery-image /images/helio/process-01-03.png 375 100 '"Process 01 03" "Process 01 03"' %}
+![Process 01 03](/images/helio/process-01-03.gif)
 
 
 ----
@@ -72,7 +74,7 @@ By randomly moving the origins around the screen, and choosing a new keleidoscop
 
 Now that a basic structure is formed, color can be derived from the distance fields.
 
-{% imgsb sb-gallery-image /images/helio/process-02-05.png 375 250 '"Process 02 01" "Process 02 01"' %}
+![Process 02 05](/images/helio/process-02-05.gif)
 
 Using @iquilezles https://iquilezles.org/articles/palettes/ generative color palettes I can map personally curated color palettes to the distance field. Color also has a drastic affect on the output of the same distance field
 
@@ -80,35 +82,35 @@ Using @iquilezles https://iquilezles.org/articles/palettes/ generative color pal
 ----
 
 {% imgsb sb-gallery-image /images/helio/process-02-02.png 375 250 '"Process 02 02" "Process 02 02"'  %}
+![Process 01 03](/images/helio/process-01-03.gif)
 
 ----
 
 {% imgsb sb-gallery-image /images/helio/process-02-03.png 375 250 '"Process 02 03" "Process 02 03"' %}
+![Process 01 03](/images/helio/process-01-03.gif)
 
 ----
 
 The foreground builds on top of the background. The background is black in the following images. By masking pixels that are outside of a certain angle from the origin, shapes are achieved. These different mix styles are seen in trait.
 
-{% imgsb sb-gallery-image /images/helio/process-03-01.png 375 250 '"Process 03 01" "Process 03 01"' %}
+![Process 03 01](/images/helio/process-03-01.gif)
 
-{% imgsb sb-gallery-image /images/helio/process-03-02.png 375 250 '"Process 03 02" "Process 03 02"' %}
+![Process 03 02](/images/helio/process-03-01.gif)
 
-
-{% imgsb sb-gallery-image /images/helio/process-03-03.png 375 250 '"Process 03 03" "Process 03 03"' %}
+![Process 03 03](/images/helio/process-03-03.gif)
 
 
 ----
 
 Adding together with the background and modulating the angle by a trait, interesting symmetric patterns are discovered.
 
-{% imgsb sb-gallery-image /images/helio/process-04-01.png 375 250 '"Process 04 01" "Process 04 01"' %}
+![Process 04 01](/images/helio/process-04-01.gif)
 
-{% imgsb sb-gallery-image /images/helio/process-04-02.png 375 250 '"Process 04 02" "Process 04 02"' %}
+![Process 04 02](/images/helio/process-04-02.gif)
 
 ----
 
 For the same structure, a different color palette produces a unique image.
-{% imgsb sb-gallery-image /images/helio/process-04-04.png 375 250 '"Process 04 04" "Process 04 04"' %}
-
+![Process 04 04](/images/helio/process-04-04.gif)
 
 ----

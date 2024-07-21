@@ -1,7 +1,10 @@
+---
 title: Helio
 date: 2022-09-06 13:12:15
+preview: /helio/anim.gif
 ---
-{% img /helio/anim.gif 985 558 '"Helio" "Helio"' %}
+![Helio](/helio/anim.gif)
+
 
 ---
 

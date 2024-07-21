@@ -1,12 +1,14 @@
+---
 title: Hyperion
 photos:
-  - /images/hyperion/10.png
-  - /images/hyperion/1.png
-  - /images/hyperion/7.png
-  - /images/hyperion/8.png
 date: 2022-02-14 21:28:19
+preview: /images/hyperion/10.png
 ---
----
+
+![hyperion](/images/hyperion/10.png)
+![hyperion](/images/hyperion/1.png)
+![hyperion](/images/hyperion/7.png)
+![hyperion](/images/hyperion/8.png)
 
 Hyperion is a multidimensional exploration of complex movement in generative art, created entirely with code. It is inspired by the infinite resolution of movement— from atoms, to cells, to planetary maneuvers: every point in time is unique. Hyperion, too, captures spectrums of texture and color with mathematical precision rendered in real time. Collectors and viewers experience the NFT in motion, rendered in any resolution.
 
@@ -27,7 +29,7 @@ Hyperion is a collection of 1024 unique NFTs each containing a 4K image render a
 
 ---
 
-{% img  /images/hyperion/6.jpeg 512 512 '"Hyperion" "Hyperion"' %}
+![Hyperion](/images/hyperion/6.jpeg)
 
 ---
 
@@ -41,12 +43,12 @@ A note on the genesis mint on Stargaze: because Stargaze will only support image
 
 ---
 
-{% img  /images/hyperion/2.png 512 512 '"Hyperion #2" "Hyperion #2"' %}
+![Hyperion](/images/hyperion/2.png)
 
 ---
 
-{% img  /images/hyperion/3.png 512 512 '"Hyperion #3" "Hyperion #3"' %}
+![Hyperion](/images/hyperion/3.png)
 
 ---
 
-{% img  /images/hyperion/11.jpg 512 512 '"Hyperion #1" "Hyperion #1"' %}
+![Hyperion](/images/hyperion/11.jpg)
