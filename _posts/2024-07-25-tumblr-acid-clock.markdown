@@ -8,7 +8,7 @@ tags:
 preview: /images/tumblr/acidclock.webp
 ---
 
-![acid clock :]](/images/tumblr/acidclock.webp)
+![acid clock](/images/tumblr/acidclock.webp)
 
 acid clock :]
 
