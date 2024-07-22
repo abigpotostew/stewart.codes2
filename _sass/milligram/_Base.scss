@@ -24,10 +24,17 @@ html {
 	font-size: 62.5%;
 }
 
+
+
 // Default body styles
 body {
 	color: $color-secondary;
-	font-family: 'Source+Code+Pro', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+	font-family: "Source Code Pro", monospace;
+	font-optical-sizing: auto;
+	font-style: normal;
+
+	//font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 	font-size: 1.6em; // Currently ems cause chrome bug misinterpreting rems on body element
 	font-weight: 300;
 	letter-spacing: .01em;
