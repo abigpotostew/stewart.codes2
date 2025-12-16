@@ -1,0 +1,1942 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Resume - 2025-12-16</title>
+	<style>/**
+ * iA Writer core.css:
+ * Base styles for all templates
+ *
+ * - Generic
+ * - Base
+ * - Objects
+ *
+ * Notes:
+ * - CSS load order: normalize.css, core.css (base styles), style.css (theme styles)
+ * - Margins are in %s (of viewport or container width) via calc() to scale fluidly
+ * - Margin/padding scaling is declared in calc() for container width: 1080px, then stopped via @media
+ * - font-size is set on body using px for breakpoints, then rems or ems per element to scale
+ */
+
+/* TOOLS */
+
+/* box-sizing */
+
+* {
+  box-sizing: border-box;
+}
+
+/* GENERIC */
+
+/* Fonts: iA Writer Mono used for code across templates */
+
+@font-face {
+  font-family: "iAWriterMono5";
+  font-weight: 400;
+  font-style: normal;
+  src: local("iAWriterMono-Regular5");
+}
+
+@font-face {
+  font-family: "iAWriterMono5";
+  font-weight: 400;
+  font-style: italic;
+  src: local("iAWriterMono-Italic5");
+}
+
+@font-face {
+  font-family: "iAWriterMono5";
+  font-weight: 450;
+  font-style: normal;
+  src: local("iAWriterMono-Text5");
+}
+
+@font-face {
+  font-family: "iAWriterMono5";
+  font-weight: 450;
+  font-style: italic;
+  src: local("iAWriterMono-TextItalic5");
+}
+
+@font-face {
+  font-family: "iAWriterMono5";
+  font-weight: 600;
+  font-style: normal;
+  src: local("iAWriterMono-Semibold5");
+}
+
+@font-face {
+  font-family: "iAWriterMono5";
+  font-weight: 600;
+  font-style: italic;
+  src: local("iAWriterMono-SemiboldItalic5");
+}
+
+@font-face {
+  font-family: "iAWriterMono5";
+  font-weight: 700;
+  font-style: normal;
+  src: local("iAWriterMono-Bold5");
+}
+
+@font-face {
+  font-family: "iAWriterMono5";
+  font-weight: 700;
+  font-style: italic;
+  src: local("iAWriterMono-BoldItalic5");
+}
+
+
+/* BASE */
+
+html,
+a {
+  color: #1a1a1a;
+}
+
+html {
+  background-color: #f9f9f9; /* iOS background color */
+}
+
+body {
+  box-sizing: content-box; /* So measure calculations don’t need to include gutters */
+  margin: 0 auto;
+  padding: 0 12px; /* 12px gutters to match iPhone 5 Title bar UI */
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility; /* NOTE May cause performance issues */
+  /* font-kerning is enabled by default in OS X Safari 7+ */
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+}
+
+/* Accessibility sizing for iOS phones */
+.content-size-4xs > body {
+  font-size: 50%;
+}
+
+.content-size-3xs > body {
+  font-size: 66%;
+}
+
+.content-size-2xs > body {
+  font-size: 73%;
+}
+
+.content-size-xs > body {
+  font-size: 80%;
+}
+
+.content-size-s > body {
+  font-size: 87%;
+}
+
+.content-size-m > body {
+  font-size: 93%;
+}
+
+.content-size-xl > body {
+  font-size: 113%;
+}
+
+.content-size-2xl > body {
+  font-size: 127%;
+}
+
+.content-size-3xl > body {
+  font-size: 140%;
+}
+
+.content-size-4xl > body {
+  font-size: 153%;
+}
+
+.content-size-5xl > body {
+  font-size: 167%;
+}
+
+.content-size-6xl > body {
+  font-size: 180%;
+}
+
+.content-size-7xl > body {
+  font-size: 193%;
+}
+
+.content-size-8xl > body {
+  font-size: 207%;
+}
+
+.content-size-9xl > body {
+  font-size: 217%;
+}
+
+.content-size-10xl > body {
+  font-size: 224%;
+}
+
+body > *:first-child {
+   margin-top: 0;
+}
+
+/* iOS gutters responsive adjustments */
+
+body {
+    --padding: 10px;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+@supports (padding: constant(safe-area-inset-left)) and (padding: constant(safe-area-inset-right)) {
+    body {
+        padding-left: calc(var(--padding) + constant(safe-area-inset-left));
+        padding-right: calc(var(--padding) + constant(safe-area-inset-right));
+    }
+}
+
+@supports (padding: env(safe-area-inset-left)) and (padding: env(safe-area-inset-right)) {
+    body {
+        padding-left: calc(var(--padding) + env(safe-area-inset-left));
+        padding-right: calc(var(--padding) + env(safe-area-inset-right));
+    }
+}
+
+/* iPhone 6 */
+@media screen and (min-width: 375px) {
+  body {
+    --padding: 22px;
+  }
+}
+
+/* iPhone 6+ */
+@media screen and (min-width: 414px) {
+  body {
+    --padding: 24px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    --padding: 32px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    --padding: 48px;
+  }
+}
+
+/* iPad triggered on 760 not 768 to work with fonts */
+@media screen and (min-width: 760px) and (max-device-width: 1024px) {
+  body {
+    --padding: 70px;
+  }
+}
+
+/* Responsive adjustments for OS X */
+@media screen and (min-device-width: 1152px) {
+  html {
+    background-color: #fcfcfc;
+  }
+
+  body {
+    --padding: 24px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-width: 1152px) {
+  body {
+    --padding: 48px;
+  }
+}
+
+@media screen and (min-width: 640px) and (min-device-width: 1152px) {
+  body {
+    --padding: 72px;
+  }
+}
+
+
+/* Headings */
+
+body > h1:first-child {
+  margin-top: 0; /* Controlled via body padding-top */
+}
+
+/* Unify space above initial heading in blockquotes (based on 31px line-height) */
+blockquote > :-webkit-any(h1, h2, h3, h4, h5):first-child {
+  margin-top: calc((21 / 1080) * 100%); /* 20px when width: 1080px */
+  padding-top: calc((10 / 1080) * 100%);/* 10px when width: 1080px */
+}
+
+@media screen and (min-width: 1080px) {
+  blockquote > :-webkit-any(h1, h2, h3, h4, h5):first-child {
+    margin-top: 21px;
+    padding-top: 10px;
+  }
+}
+
+/* Display h6 as run-in by default when followed by p
+   (h6 is no longer run-in if content is greater than one line long. Display can break if consecutive h6s are used before a <1 line p)
+   Note: Specced ways to do this display:run-in and :has() are not implemented at time of writing */
+h6 {
+  float: left;
+  margin: 0 0.5em 0 0; /* 9px @ font-size: 18px */
+}
+
+  /* Clear all siblings after floated h6… */
+h6 ~ * {
+  clear: both;
+}
+
+  /* …except immediately following paragraph */
+h6 + p {
+  clear: none;
+}
+
+/* Responsive list padding (default used by Sans, overridden for Mono and Serif) */
+ul,
+ol {
+  padding-left: 1.5rem; /* 22.5px for font-size: 15px @320px. rem works better for RWD than % */
+}
+
+@media screen and (min-width: 760px) {
+  /* Left padding based on 40px browser default */
+  ul,
+  ol {
+    padding-left: 2.2222rem; /* ~40px for font-size: 18px. rem works better for RWD than % */
+  }
+}
+
+/* HACK: Prevent empty list items collapsing
+   Note this doesn’t work for paragraph lists, although we can fix via class or once has() is supported with: `ul li:not:has(p)::after` */
+ul li:empty::after,
+.task-list-item:last-child::after {
+  content: "";
+  display: inline-block;
+}
+
+dd {
+  -webkit-margin-start: 2.2222rem; /* ~40px for font-size: 18px. rem works better for RWD than % */
+  margin-start: 2.2222rem;
+}
+
+/* Remove vertical margins on nested lists */
+:-webkit-any(li, dt, dd, th, td) > :-webkit-any(ul, ol, dl) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Override vertical margin above paragraph list items */
+:-webkit-any(li) > :-webkit-any(p, pre, figure, img) {
+    margin-top: 0;
+}
+
+/* img is wrapped in p on export by default, so leave as inline */
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+figure img {
+  display: block;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+hr {
+  clear: both;
+  margin: 3rem auto 3rem; /* Extra-large for visibility in mini-map (<100px wide) */
+  border: 0;
+  border-bottom: 1px #e6e6e6 solid;
+}
+
+/* More reasonable default to override per template */
+@media screen and (min-width: 100px) {
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Horizontal rule responsive adjustments */
+@media screen and (min-width: 1080px) {
+  hr {
+    margin-top: 46px;
+    margin-bottom: 46px;
+  }
+}
+
+
+/* table-layout: fixed; produces equal-width columns, which is generally a better result */
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px #e6e6e6 solid;
+  border-bottom: 1px #e6e6e6 solid;
+  border-collapse: collapse;
+  font-size: calc((15 / 18) * 1rem); /* 0.8333rem = 15px @ font-size: 18px */
+  line-height: calc(24 / 15); /* 1.6 = 24px @ font-size: 15px */
+  font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings: "tnum";
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+}
+
+caption {
+  caption-side: bottom;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+caption, figcaption {
+    padding-top: calc((20 / 1080) * 100%); /* 10px when width: 1080px */
+    padding-bottom: calc((10 / 1080) * 100%); /* 10px when width: 1080px */
+}
+
+tbody {
+  border-top: 1px #e6e6e6 solid;
+}
+
+th,
+td {
+  margin-right: calc((30 / 1080) * 100%); /* 30px when width: 1080px */
+  padding: calc((10 / 1080) * 100%) calc((10 / 1080) * 100%) calc((10 / 1080) * 100%) calc((10 / 1080) * 100%); /* 10px 0 10px when width: 1080px */
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Table cell responsive adjustments */
+@media screen and (min-width: 1080px) {
+  caption,
+  th,
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  th,
+  td {
+    margin-right: 30px;
+  }
+}
+
+th:last-of-type,
+td:last-of-type {
+  margin-right: 0;
+}
+
+/* Code */
+
+pre,
+code,
+kbd {
+  border-radius: 2px;
+  white-space: pre-wrap;
+  background-color: rgba(36, 36, 36, 0.055);
+}
+
+pre code {
+  background-color: transparent;
+}
+
+figure pre {
+  margin-top: 0;
+}
+
+pre {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+pre code {
+  padding: 0;
+}
+
+code,
+samp,
+kbd {
+  font-family: "iAWriterMono5", "Keyboard", monospace;
+  font-size: calc((15 / 19) * 1em); /* 0.7895em = 15px @ font-size: 19px (based on 12/16px @640 = 15.2px). Values for Serif (smallest), others need overrides */
+  font-weight: 400; /* Regular weight for non-Retina (@1x) */
+}
+
+/* Text weight for Retina (@2x) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), print {
+  code,
+  samp,
+  kbd {
+    font-weight: 450;
+  }
+}
+
+code,
+kbd {
+  padding: 0.08333em 0.1667em 0.1667em; /* ~1px 2px 2px when font-size: 12px, taking 1px border into account */
+}
+
+/* Prevent code line-height increasing heading line-height */
+:-webkit-any(h1, h2, h3, h4, h5, h6) > code, kbd {
+  line-height: normal;
+}
+
+/* Print styles */
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    color: #000 !important; /* black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html {
+    margin: 0; /* Override for safety */
+    padding: 0; /* Override for safety */
+    font-size: 9pt; /* ← needs to be set per template to counter responsive typography */
+    background: transparent !important; /* Only on html due to checkboxes */
+  }
+
+  body {
+    margin: 0 auto; /* Set all values for safety */
+    padding: 12pt 50pt; /* Set all values for safety */
+  }
+
+  /* Make sure there’s no margin-top on first element */
+  body > :first-child {
+    margin-top: 0;
+  }
+
+  /* h6 excluded as the page-break-inside rule conflicts with page-initial inline h6 when printed */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  img,
+  figure {
+    page-break-inside: avoid;
+    page-break-after: avoid; /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=5097 */
+  }
+
+  p {
+    /* Not supported by Webkit at time of writing, ref: https://bugs.webkit.org/show_bug.cgi?id=39735 */
+    widows: 3;
+    orphans: 3;
+  }
+
+  hr {
+    border-bottom-color: #000 !important;
+  }
+
+  /* Underline on superscript footnote number, which when clicked shows an error */
+  .footnote {
+    text-decoration: none;
+  }
+
+  /* Underline for table of contents on printed pages */
+  .TOC a {
+    text-decoration: none;
+  }
+
+  /* Link which allows you to go back to the text from footnote—useless on a printed page */
+  .reversefootnote {
+    display: none;
+  }
+
+  .tooltip:after {
+    display: none;
+  }
+}
+
+
+/* OBJECTS */
+
+/* Center Headings
+   Center h1-h5 headings, via the Centered Headings setting */
+.center-headings :-webkit-any(h1, h2, h3, h4, h5) {
+  text-align: center;
+}
+
+/* Indent Paragraphs
+   Indent the first line of sequential paragraphs, via the Indent Paragraph setting */
+.indent-paragraphs p + p {
+  margin-top: 0;
+  text-indent: 1.2em; /* Tweaked per template */
+}
+
+/* Night Mode */
+
+.night-mode,
+.night-mode a {
+  color: #dedede; /* iOS text color */
+}
+
+.night-mode {
+  background-color: #101010; /* iOS background color */
+}
+
+.night-mode pre,
+.night-mode code,
+.night-mode kbd {
+  background-color: rgba(245, 245, 245, 0.06);
+}
+
+.night-mode pre code {
+  background-color: transparent;
+}
+
+/* Colors for OS X */
+@media screen and (min-device-width: 1152px) {
+  .night-mode,
+  .night-mode a {
+    color: #cccccc; /* OS X text color */
+  }
+
+  .night-mode {
+    background-color: #101010;
+  }
+}
+
+/* Fake sub-pixel lines */
+.night-mode hr,
+.night-mode caption,
+.night-mode tbody th,
+.night-mode td {
+  border-bottom-color: #666;
+}
+
+.night-mode tbody th,
+.night-mode td {
+  border-top-color: #666;
+}
+
+/* Footnotes */
+
+.footnotes {
+  margin-top: calc((45 / 1080) * 100%); /* 45px when width: 1080px (excluding padding) */
+  page-break-before: avoid;
+  font-size: calc((16 / 18) * 1rem); /* 0.8889rem, 16/18px @1080px wide, default for Monospace */
+  line-height: calc(27 / 16); /* 1.6875, 27px @1080px wide, default for Monospace */
+}
+
+.footnotes hr {
+  margin-top: calc((60 / 760) * 100%); /* 60px when width: 1080px */
+  page-break-after: avoid;
+}
+
+.footnotes p {
+  margin: 0 auto;
+}
+
+/* Remove underline on .reversefootnote arrow for iOS, as it’s turned into an emoji */
+@media screen and (max-device-width: 1024px) {
+  .reversefootnote {
+    text-decoration: none;
+  }
+}
+
+/* Footnotes responsive adjustments when width: 1080px */
+@media screen and (min-width: 1080px) {
+  .footnotes {
+    margin-top: 45px;
+  }
+
+  /* Hanging footnote ordinals */
+  .footnotes ol {
+    padding-left: 0;
+  }
+
+  .footnotes hr {
+    margin-top: 60px;
+  }
+}
+
+/* Task Lists
+   Left padding based on 40px default */
+
+/* Position ordinal counters so 1-9 left-align with left content edge. Subsequent counters will begin in gutter. */
+ol .task-list-item {
+  margin-left: -0.6667rem; /* ~-10px @ font-size: 15px */
+  padding-left: 0.6667rem; /* ~10px @ font-size: 15px */
+}
+
+/* Hide default bullets for unordered task lists. */
+ul .task-list-item {
+  list-style-type: none;
+}
+
+/* Hide gen-content bullets for unordered task lists. */
+ul .task-list-item:before {
+  display: none;
+}
+
+.task-list-item-checkbox {
+  float: left; /* Removes from flow in case of paragraph list items */
+  width: 1.6rem; /* Same as p line-height (changing width/height affects svg size) */
+  height: 1.6rem; /* Same as width */
+  margin: 0 0 0 -1.6rem; /* 0s to overwrite user agent styles */
+  border: none; /* Otherwise iPhone draws a border */
+  font-size: 1rem; /* Required to overwrite user agent styles, set to same as p */
+  background-image: url('box.svg');
+  background-repeat: no-repeat;
+  background-position: 40% 40%; /* x=roughly align with bullets and between ordinal and text, y=4px down to roughly align to baseline. */
+  background-size: 50% 50%; /* Desired size 12px / 21px line-height for Preview */
+  background-color: transparent;
+  -webkit-print-color-adjust: exact; /* Prevents from hiding when printed */
+  -webkit-appearance: none; /* Disables system checkbox image */
+  opacity: 1.0; /* Otherwise they are 0.4 on iPhone, where it applies disabled effect even with above */
+}
+
+.task-list-item-checkbox:checked {
+  background-image: url('check.svg');
+}
+
+/* Checkbox color in Night Mode (=text color) */
+.night-mode .task-list-item-checkbox {
+  background-image: url('box-night-mode-ios.svg');
+}
+
+.night-mode .task-list-item-checkbox:checked {
+  background-image: url('check-night-mode-ios.svg');
+}
+
+/* OS X color */
+@media screen and (min-device-width: 1152px) {
+  .night-mode .task-list-item-checkbox {
+    background-image: url('box-night-mode-osx.svg');
+  }
+
+  .night-mode .task-list-item-checkbox:checked {
+    background-image: url('check-night-mode-osx.svg');
+  }
+}
+
+.header, .footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#title {
+  height: 100%;
+}
+
+.title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+address {
+    text-align: right;
+    white-space: pre;
+}
+
+
+/* Smart Table ToolTips */
+
+.tooltip {
+    position: relative;
+}
+
+table .tooltip:after {
+    font-size: 10px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    top: calc(50% - 10px);
+    left: 0%;
+    content: attr(id);
+    padding: 2px 4px;
+    position: absolute;
+    z-index: 98;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+table:hover .tooltip:after {
+    /* Tooltips are always visible, and use transparent background and text color unless table is hovered because WebKit has a bug where table caption jumps around if table cells get a new abolutely positioned element inside. */
+    color: #fff;
+    background-color: #000;
+}
+
+/* Automatic Heading Numbering */
+
+/* Thanks to Phil Archer. http://philarcher.org/diary/2013/headingnumbers/ */
+
+.number-headings body {counter-reset: h2}
+.number-headings h2 {counter-reset: h3}
+.number-headings h3 {counter-reset: h4}
+.number-headings h4 {counter-reset: h5}
+/* .number-headings h5 {counter-reset: h6} */ /* Omitted H6. Inline headings are useful in non-hierarchical contexts */
+.number-headings h2:before {counter-increment: h2; content: counter(h2) ". "}
+.number-headings h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+.number-headings h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
+.number-headings h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
+/* .number-headings h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "} */ /* H6 omitted as above */
+.number-headings h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {content: ""; counter-increment: none}
+
+/* Don't number author H2 on title page */
+.title > h2:before {content: ""}
+
+span.hashtag {
+  font-family: -apple-system;
+  font-weight: 400;
+  line-height: 1rem;
+  font-size: 0.85rem;
+  color: hsl(0, 0%, 55%);
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 1rem;
+  border-width: 1pt;
+  border-style: solid;
+  border-color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+html.night-mode span.hashtag {
+  border-color: hsl(0, 0%, 18%);
+  background-color: hsl(0, 0%, 5%)
+}
+
+mark {
+    color: inherit;
+    background-color: rgb(253, 229, 102);
+    padding: 0.04167em 0.08333em 0.1667em 0.08333em;
+}
+
+html.night-mode mark {
+    color: inherit;
+    background-color: rgb(121, 76, 14);
+}
+</style>
+<style>/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}</style>
+	<style>
+/**
+ * iA Writer Template “Serif”
+ *
+ * font-family: Palatino
+ * font-size:   15px iPhone 5, 16px iPhone 6+, 17px iPad, 18px Mac, 19px
+ * line-height: 1.6316 (31px @ font-size: 19px)
+ * vert margin: 31px @ 1080px wide
+ */
+
+/* TOOLS → core.css */
+
+/* GENERIC */
+
+/* Fonts */
+@font-face {
+  font-family: "Palatino";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palatino";
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Palatino";
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palatino";
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Palatino";
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palatino";
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* BASE */
+
+/* Assumed from min-width: 80px */
+html {
+  font-family: "Palatino", "Georgia", Keyboard, Times, "Hiragino Mincho ProN", "ヒラギノ明朝 ProN", serif; /* Times for Cyrillic, Hiragino to prevent Japanese displaying in Kaku */
+  font-size: 1px; /* Overridden by responsive font sizing */
+  line-height: calc(31 / 19); /* 1.6316 = 31px @ font-size: 19px */
+}
+
+/* Only justify on iPhone 6 and above */
+@media screen and (min-width: 375px), print {
+  html {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
+/* Responsive adjustments */
+
+@media screen and (min-width: 81px) {
+  html {
+    font-size: 1.1px;
+  }
+}
+
+@media screen and (min-width: 82px) {
+  html {
+    font-size: 1.2px;
+  }
+}
+
+@media screen and (min-width: 83px) {
+  html {
+    font-size: 1.3px;
+  }
+}
+
+@media screen and (min-width: 84px) {
+  html {
+    font-size: 1.4px;
+  }
+}
+
+@media screen and (min-width: 85px) {
+  html {
+    font-size: 1.5px;
+  }
+}
+
+@media screen and (min-width: 88px) {
+  html {
+    font-size: 1.7px;
+  }
+}
+
+@media screen and (min-width: 90px) {
+  html {
+    font-size: 1.85px;
+  }
+}
+
+@media screen and (min-width: 92px) {
+  html {
+    font-size: 2px;
+  }
+}
+
+@media screen and (min-width: 97px) {
+  html {
+    font-size: 2.5px;
+  }
+}
+
+@media screen and (min-width: 105px) {
+  html {
+    font-size: 3px;
+  }
+}
+
+@media screen and (min-width: 114px) {
+  html {
+    font-size: 3.5px;
+  }
+}
+
+@media screen and (min-width: 120px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media screen and (min-width: 135px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (min-width: 150px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (min-width: 165px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 180px) {
+  html {
+    font-size: 8px;
+  }
+
+  .mac {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+
+@media screen and (min-width: 200px) and (min-device-width: 1152px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 220px) {
+  html {
+    font-size: 10px;
+  }
+
+  .mac {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  html {
+    font-size: 11px;
+  }
+
+  .mac {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 260px) {
+  html {
+    font-size: 12px;
+  }
+
+  .mac {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  html {
+    font-size: 13px;
+  }
+
+  .mac {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: 14px;
+  }
+
+  .mac {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* 15px @320 for iPhone 5 */
+  html {
+    font-size: 15px;
+  }
+
+  .mac {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  /* For iPhone 6+ */
+  html {
+    font-size: 16px;
+  }
+
+  .mac {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 16.5px;
+  }
+
+  .mac {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* For iPad */
+  html {
+    font-size: 17px;
+  }
+
+  .mac {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  html {
+    font-size: 18px;
+  }
+
+  .mac {
+    font-size: 17px;
+  }
+}
+
+/* For widescreen */
+@media screen and (min-width: 1080px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+body {
+  max-width: 37.5em;
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    max-width: 705px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+blockquote em {
+  font-weight: 600;
+}
+
+/* Headings */
+
+h1 {
+  margin-top: calc((62 / 23) * 1em);
+  margin-bottom: calc((62 / 23) * 1em);
+  font-size: calc((23 / 19) * 1em); /* 1.2105em = 23px @ font-size: 19px */
+  line-height: calc(31 / 23); /* 1.3478 = 31px @ font-size: 23px */
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  margin-top: calc((62 / 21) * 1em);
+  margin-bottom: calc((31 / 21) * 1em);
+  font-size: calc((21 / 19) * 1em); /* 1.1053em = 21px @ font-size: 19px */
+  line-height: calc(31 / 21); /* 1.4762 = 31px @ font-size: 21px */
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-top: calc((31 / 19) * 1em);
+  font-size: 1em;
+}
+
+h3,
+h4,
+h5 {
+  margin-bottom: 0;
+}
+
+h3,
+h4 {
+  line-height: calc(31 / 19); /* 1.6316 = 31px @ font-size: 19px */
+}
+
+h4 {
+  font-style: italic;
+}
+
+/* Small caps embedded in font are not supported in WebKit at time of writing
+  http://www.stateofwebtype.com/#Small%20Capitals%20(smcp)
+  HACK Temporary workaround via all caps in Palatino Bold */
+h5,
+h6 {
+/*  font-variant-caps: small-caps;
+  -webkit-font-feature-settings: "smcp";
+  -moz-font-feature-settings: "smcp";
+  -ms-font-feature-settings: "smcp";
+  -o-font-feature-settings: "smcp";
+  font-feature-settings: "smcp";
+  text-transform: lowercase; */
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+/* HACK Fudge a baseline match between h6 and text when run-in */
+h6 {
+  position: relative;
+  top: calc((0.35 / 16.4673) * 1em);
+  margin-bottom: calc((0.45 / 16.4673) * -1em);
+}
+
+@media screen and (min-width: 640px) {
+  h6 {
+    top: calc((0.55 / 16.4673) * 1em);
+    margin-bottom: calc((0.65 / 16.4673) * -1em);
+  }
+}
+
+
+/* Display h6 as run-in: see core.css */
+
+/* Subheading adjustments */
+
+h1 + :-webkit-any(h1, h2) {
+  margin-top: calc((46 / 19) * -1em);
+}
+
+h2 + :-webkit-any(h1, h2) {
+  margin-top: calc((15 / 19) * -1em);
+}
+
+:-webkit-any(h1, h2, h3, h4, h5, h6) + :-webkit-any(h3, h4, h5, h6),
+body > h6:first-child {
+  margin-top: 0;
+}
+
+/* Vertical margins */
+p,
+ol,
+ul,
+dl,
+figure,
+blockquote,
+pre,
+table {
+  margin: calc((31 / 19) * 1em) auto 0;
+}
+
+/* Collapse vertical margin between headers and block-level elements */
+:-webkit-any(h3, h4, h5) + :-webkit-any(p, ol, ul, dl, figure, blockquote, pre, table),
+:-webkit-any(h1, h2, h3, h4, h5) + h6 + *,
+hr + h6 {
+  margin-top: 0;
+}
+
+/* Lists */
+@media screen and (min-width: 760px) {
+  ul,
+  ol {
+    padding-left: calc((40 / 19) * 1em); /* 2.1053em = ~40px for font-size: 19px. em works better for RWD than % */
+  }
+}
+
+/* Use custom bullet for unordered lists */
+ul {
+  list-style: none;
+}
+
+ul > li:before {
+  content: "• ";
+  float: left; /* Take out of flow to avoid changing left edge alignment or pushing child paragraph down */
+  margin-left: calc((21 / 19) * -1em); /* -1.1053em = 21px @ font-size: 19px. em works better for RWD than % */
+}
+
+/* Indent ordered lists in blockquotes */
+blockquote ol,
+blockquote ul {
+  margin-left: calc((31 / 19) * -1em);
+}
+
+/* Blockquotes */
+blockquote {
+  margin-left: calc((16 / 19) * -1em); /* 16px at width: 1080px */
+  margin-right: calc((16 / 19) * -1em); /* 16px at width: 1080px */
+  padding-left: calc((40 / 19) * 1em); /* 40px at width: 1080px */
+  padding-right: calc((40 / 19) * 1em); /* 40px at width: 1080px */
+  font-style: italic;
+}
+
+blockquote em strong,
+blockquote strong em {
+  font-weight: 700;
+}
+
+/* Override core.css */
+@media screen and (min-width: 100px) {
+  hr {
+    margin-top: calc((31 / 19) * 1em);
+    margin-bottom: calc((30 / 19) * 1em); /* -1px for border-bottom */
+  }
+}
+
+/* Tables */
+
+table {
+  font-size: calc((16 / 19) * 1em); /* 0.8421em = 16px @ font-size: 19px */
+  line-height: calc(25 / 16); /* 1.5625 = 25px @ font-size: 16px; */
+}
+
+/* Table label
+   13.86672HACK Small caps temporary workaround via all caps in smaller Tiempos Bold. See h6 above for more info */
+th {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Code */
+/* font-size and line-height defined in core, as Serif has smallest values */
+
+/* Code that inherits bold */
+
+h1 :-webkit-any(code, samp, kbd, strong) {
+  font-weight: 700;
+}
+
+:-webkit-any(h2, h4, h5, h6) :-webkit-any(code, samp, kbd) {
+  font-weight: 600;
+}
+
+
+/* @media Rules */
+
+/* Combined horizontal line styles, supplimenting core.css */
+
+/* Adjust border color to imitate sub-pixel lines */
+@media screen and (min-width: 150px) {
+  hr,
+  caption,
+  tbody th,
+  td {
+    border-bottom-color: #888;
+  }
+
+  tbody th,
+  td {
+    border-top-color: #888;
+  }
+}
+
+/* Intended border color from 200px */
+@media screen and (min-width: 200px) {
+  hr,
+  caption,
+  tbody th,
+  td {
+    border-bottom-color: #1a1a1a;
+  }
+
+  tbody th,
+  td {
+    border-top-color: #1a1a1a;
+  }
+}
+
+/* Print styles */
+/* font-size needs to be set here again otherwise responsive typography overrides it */
+@media print {
+  html {
+    font-size: 9.5pt;
+  }
+
+  body {
+    max-width: 365pt;
+  }
+
+  h6 {
+    top: calc((3 / 16.4673) * 1em);
+    margin-bottom: calc((3.1 / 16.4673) * -1em);
+  }
+}
+
+/** OBJECTS → see core.css base styles for:
+ *  - Indent Paragraphs
+ *  - Footnotes
+ *  - Task lists
+ */
+
+/* Indent Paragraphs */
+.indent-paragraphs p + p {
+  text-indent: calc((21 / 19) * 1em); /* 1.1053em = 21px @ font-size: 19px */
+}
+
+
+/* Night Mode */
+
+/* Imitate sub-pixel line for narrow widths */
+
+/* First tweakpoint modifying core.css */
+@media screen and (min-width: 150px) {
+  .night-mode hr,
+  .night-mode caption,
+  .night-mode tbody th,
+  .night-mode td {
+    border-bottom-color: #888;
+  }
+
+  .night-mode tbody th,
+  .night-mode td {
+    border-top-color: #888;
+  }
+}
+
+/* Intended border color from 200px */
+@media screen and (min-width: 200px) {
+  .night-mode hr,
+  .night-mode caption,
+  .night-mode tbody th,
+  .night-mode td {
+    border-bottom-color: #dedede;
+  }
+
+  .night-mode tbody th,
+  .night-mode td {
+    border-top-color: #dedede;
+  }
+}
+
+/* Intended border color from 200px for OS X */
+@media screen and (min-width: 200px) and (min-device-width: 1152px) {
+  .night-mode hr,
+  .night-mode caption,
+  .night-mode tbody th,
+  .night-mode td {
+    border-bottom-color: #cccccc;
+  }
+
+  .night-mode tbody th,
+  .night-mode td {
+    border-top-color: #cccccc;
+  }
+}
+
+/* Footnotes */
+.footnotes {
+  font-size: calc((18 / 19) * 1em); /* 0.9474em = 18px @ font-size: 18px */
+  line-height: calc(31 / 18); /* 1.7222 = 31px @ font-size: 18px */
+}
+
+/* Task Lists */
+
+ol .task-list-item {
+  margin-left: -1em;
+  padding-left: 1em;
+}
+
+.task-list-item-checkbox {
+  width: 1.6316em; /* line-height */
+  height: 1.6316em; /* same as width */
+  background-position: 47% 39%; /* tweaks */
+}
+
+/* Position ordinal counters so 1-9 left-align with left content edge. Subsequent counters will begin in gutter. *
+ol .task-list-item {
+  margin-left: -14px;
+  padding-left: 14px;
+}*/
+
+	</style>
+</head>
+<body>
+<h3>Stewart Bracken</h3>
+
+<p><a href="mailto:stew.bracken@gmail.com">stew.bracken@gmail.com</a>
+• 925.487.7855
+• <a href="https://github.com/abigpotostew">@abigpotostew</a>
+• <a href="https://www.stewart.codes">www.stewart.codes</a>
+• Oakland, CA</p>
+
+<hr />
+
+<h4>Education</h4>
+
+<p><strong>Bachelor of Science Computer Science: Game Design</strong> University of California Santa Cruz 2013. Highest Honors, Cum Laude.</p>
+
+<h4>Experience</h4>
+
+<h6>Lore, March 2021 - Present</h6>
+
+<ul>
+<li>Engineering lead - Responsible for translating strategy into quality software, managing engineering team
+
+<ul>
+<li>Architected crypto wallets using multi-party computation protocol that secured $50mm+ assets</li>
+<li>Designed, architected, and secured an Exchange Traded Fund (ETF) like financial primitive for blockchains</li>
+<li>Wore many hats in a fast paced startup. Ask me about my experience with system architecture, data engineering, growth engineering, devops, DBA, people management, and UI/UX</li>
+</ul></li>
+</ul>
+
+<h6>Workday, Inc. July 2014 - March 2021</h6>
+
+<ul>
+<li>Senior Software Engineer - Workday Extend Platform - App Hub
+
+<ul>
+<li>Created an &quot;App store&quot; for Workday by providing customer driven app version deployments with instant and seamless updates to thousands of production, test, and internal workday environments</li>
+<li>Developed customer facing Rest APIs to orchestrate runtime service app updates</li>
+<li>Developed performant micro service cache layer to seamlessly update apps at runtime</li>
+</ul></li>
+<li>Senior Software Engineer - Workday Extend Platform - Global App Registry
+
+<ul>
+<li>A centralized and remote source of truth replicating data from thousands of environments for reporting</li>
+</ul></li>
+<li>Software Engineer - XpressO language
+
+<ul>
+<li>Maintained and improved the in-house programming language XpressO supporting 1000+ workday developers</li>
+</ul></li>
+<li>Application Developer
+
+<ul>
+<li>Increased performance of legacy time tracking application by identifying and rewriting hot spots</li>
+</ul></li>
+</ul>
+</body>
+</html>
